@@ -1,18 +1,21 @@
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
 /* Navbar */
 nav {
     background: #333;
-    padding: 10px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
     padding: 0;
 }
 
@@ -23,6 +26,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -32,9 +36,60 @@ nav ul li a:hover {
 /* Layout */
 .container {
     display: flex;
+    min-height: 100vh;
 }
 
-/* Left Side */
+/* Left Section */
+.left {
+    width: 30%;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* Profile Image */
+.profile img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #333;
+    margin-bottom: 10px;
+}
+
+/* Right Section */
+.right {
+    width: 70%;
+    padding: 30px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Skills list */
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    background: #ddd;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}/* Left Side */
 .left {
     width: 30%;
     background: #f4f4f4;
